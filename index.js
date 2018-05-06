@@ -15,10 +15,11 @@ import {
    Dimensions
 } from 'react-native';
 
+var createReactClass = require('create-react-class');
 var SCREEN_HEIGHT = Dimensions.get('window').height;
 var DraggableDrawerHelper = require('./helper')(SCREEN_HEIGHT);
 
-var component = React.createClass({
+var component = createReactClass({
    getInitialState: function() {
       // naming it initialX clearly indicates that the only purpose
       // of the passed down prop is to initialize something internally
